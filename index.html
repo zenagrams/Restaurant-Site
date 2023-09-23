@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Document title</title>
+<meta charset='utf-8'>
+<meta name='description' content='Description of document content'>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header role='banner'>
+  <h1>Document title, main headline</h1>
+  <nav>
+    <ol role='navigation'>
+      <li>
+        <a href='#'>Home</a>
+      </li>
+      <li>
+        <a href='#'>Menu</a>
+      </li>
+      <li>
+        <a href='#'>About</a>
+      </li>
+      <li>
+        <a href='#'>Order</a>
+      </li>
+    </ol>
+    <form role='search'>
+      <input type='search' placeholder='Enter search term here...'>
+      <input type='submit' value='search'>
+    </form>
+  </nav>
+</header>
+
+<main role='main'>
+  <h2>Main Content</h2>
+  <p>
+    Text for this article. 
+    Keep in mind that the hierarchy of headlines 
+    (h1 descending to h6) matters a lot to screen readers.
+  </p>
+  
+<!-- Add your restaurant order form below -->
+  <form role='order_form'>
+    <input type='search' placeholder='Put Order Form Here'>
+    <input type='submit' value='order'>
+  </form>
+<!-- Add your restaurant order form above -->
+</main>
+
+<aside role='complementary'>
+  <h2>Sidebar</h2>
+  <p>Complementary content, additional information and such...</p>
+</aside>
+
+<footer role='contentinfo'>
+  <h2>Footer</h2>
+  <p>Information about the document, it's author and such...</p>
+</footer>
+
+</body>
+</html>
