@@ -13,3 +13,12 @@ body {
 }
 
 /* Add your custom CSS below this line */
+
+h1, form.order_form{
+    background-color: #e3dcc0 ;
+}
+ 
+h1, h2 {
+    font-weight: bold;
+    text-align: center;
+}
