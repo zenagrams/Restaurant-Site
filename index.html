@@ -43,14 +43,15 @@
   </p>
 </div>
 <div>
-  <img src="https://source.unsplash.com/E94j3rMcxlw" alt="bbq bacon burger" width="100px"/>
   <h3>BBQ Bacon Burger</h3>
+  <img src="https://source.unsplash.com/E94j3rMcxlw" alt="bbq bacon burger" width="100px"/>
   <p>
     Candied bacon, cheddar cheese, lettuce, onion, tomatoes, pickles, bbq.
     <div>$9</div> 
   </p>
 </div>
 <div>
+  <h3>Overeasy Egg Burger</h3>
   <img src="https://source.unsplash.com/-GFCYhoRe48" alt="overeasy egg burger" width="100px"/>
   <p>
     Ham, overeasy egg, gouda, grass-fed beef, hollandaise sauce.
@@ -59,8 +60,25 @@
 </div>
   
 <!-- Add your restaurant order form below -->
-  <form role='order_form'>
+  <form role="order_form" action="#">
+    <div class="cart">
+      <h2>Order</h2>
+      <p> Please select the amount of burgers you would like for each type.(Max 10 for each type).</p>
+      <div>
+        <label for="amount">Original House Burger</label>
+        <input type="number" name="amount" id="amount" min="0" max="10">
+      </div>
+      <div>
+        <label for="amount">BBQ Bacon Burger</label>
+        <input type="number" name="amount" id="amount" min="0" max="10">
+      </div>
+      <div>
+        <label for="amount">Overeasy Egg Burger</label>
+        <input type="number" name="amount" id="amount" min="0" max="10">
+      </div>
+    </div>
     <div class="name">
+      <h2>Contact Information</h2>
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="fname" placeholder="first name">
       <label for="lname">Last Name</label>
@@ -85,6 +103,7 @@
       </div>
     </div>
     <div class="ccinfo">
+      <h2>Payment Information</h2>
       <label for="ccname">Name on card</label>
       <input type="text" id="ccname" name="ccname" placeholder="John Smith">
       <div class="cnumber">
@@ -99,10 +118,8 @@
         <label for="cczip">Zip</label>
         <input type="text" id="cczip" name="cczip" placeholder="10001">
       </div>
-
     </div>
-      <input type='search' placeholder='Put Order Form here'>
-      <input type='submit' value='order'>
+      <input type="submit" value="Submit Order">
   </form>
 <!-- Add your restaurant order form above -->
 </main>
